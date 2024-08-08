@@ -39,7 +39,7 @@ html, body {
 
 .navbar-custom {
     background-color: goldenrod;
-    padding: 10px 50px;
+    padding: 10px 30px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -113,7 +113,18 @@ html, body {
     font-size: 2rem;
     font-weight: 1000;
 }
-
+@media (max-width: 768px) {
+    #home h1{
+        color: white;  
+        font-size: 2rem;
+        font-weight: 1000;
+    }
+    #home p{
+        color: #46515c;  
+        font-size: 1.5rem;
+        font-weight: 1000;
+    }
+}
 .text-grey {
     color: #46515c; 
 }
@@ -392,7 +403,7 @@ html, body {
 
     .frontend-skills,
     .backend-skills {
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(3, 1fr); 
     }
 
     .platform-skills,
@@ -505,6 +516,13 @@ html, body {
         font-size: 14px;
         padding: 6px 12px;
     }
+    .project-image {
+        width: 200px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10%;
+        margin-bottom: 10px;
+    }
 }
 #contact {
     background: #f8f9fa; 
@@ -605,9 +623,29 @@ footer p {
 @media (max-width: 768px) {
     .contact-info-upper-container {
         flex-direction: column;
-        width: 80%; 
+        width: 100%;
+        padding: 0 20px; 
+        box-sizing: border-box;
+        align-items: center;
     }
 
+    .contact-info-container {
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info-container a {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        color: #333; 
+        font-size: 0.7rem;
+        text-decoration: none; 
+        margin-bottom: 10px; 
+    }
+    
     footer .nav-links {
         flex-direction: column;
     }
@@ -616,6 +654,7 @@ footer p {
         margin: 10px 0; 
     }
 }
+
 section:target {
     padding-top: 50px; 
     margin-top: -50px; 
