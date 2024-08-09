@@ -12,7 +12,11 @@ html, body {
     background: url('./images/Profilepic.jpg') center center / cover no-repeat fixed;
     background-size: cover;
 }
-
+@media (max-width: 768px) {
+    #home {
+        background-attachment: scroll; /* This changes the background to scroll along with the page on mobile */
+    }
+}
 .overlay {
     position: absolute;
     top: 0;
