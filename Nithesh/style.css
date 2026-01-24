@@ -173,7 +173,7 @@ html, body {
 #about .card-text {
     font-size: 1.3rem; 
     color: #46515c; 
-    text-align: justify; 
+    text-align: start; 
     flex: 1; 
     max-width: none; 
     font-style: italic;
@@ -207,7 +207,7 @@ html, body {
     #about .card-text {
         max-width: 100%; 
         font-size: small;
-        text-align: justify; 
+        text-align: left; 
         margin-top: 20px; 
     }
     
